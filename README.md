@@ -8,6 +8,12 @@ Useful information about Elixir Programming language
 - `iex` - run Interactive Elixir mode in terminal
 - `elixir hello.exs` - run Elixir script (eg. this script has command: `IO.puts "Hi"`)
 
+## Interactive Elixir mode
+
+- `h` - shows help
+- `ls` - list files in current directory
+- `h is_integer/1` - shows documentation for function `is_integer/1`
+
 ## Syntax features
 
 - Elixir allows you to drop the parentheses when invoking named functions:
