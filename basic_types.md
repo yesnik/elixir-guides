@@ -65,6 +65,13 @@ Strings in Elixir are delimited by *double quotes*, and they are encoded in UTF-
 "Hello"
 ```
 
+**Interpolation**
+
+```
+name = "Kenny"
+"Hello #{name}" #=> "Hello Kenny"
+```
+
 ## Lists
 
 ```
