@@ -14,3 +14,15 @@
 ```
 String.length "hey" #=> 3
 ```
+
+### upcase
+
+```
+String.upcase "hey" #=> "HEY"
+```
+
+### downcase
+
+```
+String.downcase "HEY" #=> "hey"
+```
