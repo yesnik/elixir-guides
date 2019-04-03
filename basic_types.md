@@ -14,6 +14,8 @@
 10 / 3 #=> 3.3333333333333335
 ```
 
+In Elixir, the operator `/` always returns a `float.
+
 ## Booleans
 
 ```
