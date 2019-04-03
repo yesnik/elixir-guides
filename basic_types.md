@@ -5,6 +5,9 @@
 ```
 10
 ```
+```
+is_integer(5) #=> true
+```
 
 ## Floats
 
@@ -12,6 +15,12 @@
 5.5
 10 / 2 #=> 5.0
 10 / 3 #=> 3.3333333333333335
+```
+```
+is_float(3.14) #=> true
+
+is_number 3.14 #=> true
+is_number 5 #=> true
 ```
 
 In Elixir, the operator `/` always returns a `float.
@@ -22,11 +31,18 @@ In Elixir, the operator `/` always returns a `float.
 true
 false
 ```
+```
+is_boolean(false) #=> true
+is_boolean(1) #=> false
+```
 
 ## Atoms / Symbols
 
 ```
 :atom
+```
+```
+is_atom(:hi) #=> true
 ```
 
 ## Strings
