@@ -25,6 +25,11 @@ is_number 5 #=> true
 
 In Elixir, the operator `/` always returns a `float.
 
+Elixir has a construct called **aliases**. Aliases start in upper case and are also atoms:
+```
+is_atom Kenny #=> true
+```
+
 ## Booleans
 
 ```
@@ -32,8 +37,15 @@ true
 false
 ```
 ```
-is_boolean(false) #=> true
-is_boolean(1) #=> false
+is_boolean false #=> true
+is_boolean 1 #=> false
+```
+
+The booleans `true` and `false` are, in fact, atoms:
+
+```
+true == :true #=> true
+is_atom false #=> true
 ```
 
 ## Atoms / Symbols
@@ -42,7 +54,7 @@ is_boolean(1) #=> false
 :atom
 ```
 ```
-is_atom(:hi) #=> true
+is_atom :hi #=> true
 ```
 
 ## Strings
