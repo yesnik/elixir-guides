@@ -16,3 +16,5 @@ Useful information about Elixir Programming language
 div(10, 3) #=> 3
 div 10, 3 #=> 3
 ```
+
+- Functions in Elixir are identified by both their name and their *arity* (i.e. the number of arguments that the function takes). `div/2` identifies the function which is named `div` and takes 2 arguments.
