@@ -65,6 +65,13 @@ Strings in Elixir are delimited by *double quotes*, and they are encoded in UTF-
 "Hello"
 ```
 
+Single-quoted and double-quoted representations are not equivalent in Elixir 
+as they are represented by different types:
+
+```elixir
+"hello" == 'hello' #=> false
+```
+
 **Interpolation**
 
 ```
@@ -75,7 +82,15 @@ name = "Kenny"
 ## Lists
 
 ```
-[1, 2, 3]
+length ['hi', true, 123] #=> 3
+
+[1, 2] ++ [true, 4] #=> [1, 2, true, 4]
+
+[1, 2, 4] -- [true, 4] #=> [1, 2]
+[4, 1, 2, 4] -- [true, 4] #=> [1, 2, 4]
+
+hd [2, 4, 5] #=> 2
+tl [2, 4, 5] #=> [4, 5]
 ```
 
 ## Tuples
