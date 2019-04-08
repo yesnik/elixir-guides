@@ -93,8 +93,22 @@ hd [2, 4, 5] #=> 2
 tl [2, 4, 5] #=> [4, 5]
 ```
 
+Lists are stored in memory as *linked lists*, meaning that each element in a list holds its value and points to the following element until the end of the list is reached. 
+This means accessing the length of a list is a linear operation: we need to traverse the whole list in order to figure out its size.
+
+Similarly, the performance of list concatenation depends on the length of the left-hand list.
+
 ## Tuples
 
 ```
-{1, 2, 3}
+tuple = {:hi, "kenny", 123}
+
+elem tuple, 1 #=> "kenny"
+
+tuple_size tuple #=> 3
+
+put_elem(tuple, 1, "joe") #=> {:hi, "joe", 123}
 ```
+
+Tuples, on the other hand, are stored contiguously in memory. This means getting the tuple size or accessing an element by index is fast. However, updating or adding elements to tuples is expensive because it requires creating a new tuple in memory.
+
